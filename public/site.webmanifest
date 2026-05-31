@@ -1,0 +1,26 @@
+{
+  "name": "Ready To Scale",
+  "short_name": "ReadyToScale",
+  "description": "Launch and manage an online store with storefront, admin panel, customer portal, orders, payments, delivery updates, analytics, SEO and hosting.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#030712",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity", "shopping"],
+  "icons": [
+    {
+      "src": "/assets/readytoscale_logo_R.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/readytoscale_logo_R.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

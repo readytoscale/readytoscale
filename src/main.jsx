@@ -84,6 +84,14 @@ const plans = [
   ['Enterprise Edition', 'Please contact', 'For worldwide supply, trillion users, and fully customized commerce systems', ['Worldwide supply operations', 'Trillion-user scale planning', 'Customized architecture and UI', 'Dedicated consultation']],
 ];
 
+const faqItems = [
+  ['What is Ready To Scale?', 'Ready To Scale is an eCommerce platform that helps businesses launch an online store with a customer storefront, admin panel, product management, order management, payments, delivery updates, analytics, SEO and hosting.'],
+  ['Can I manage products and orders from one admin panel?', 'Yes. The admin panel lets you add products, manage catalog details, see customer orders, view payment status and update delivery status.'],
+  ['Does Ready To Scale include a customer portal?', 'Yes. Customers can use the portal to browse products, sign up, place demo orders and receive live delivery status updates.'],
+  ['Is design customization available?', 'Design customization is available across Ready To Scale plans so the storefront can match your business identity.'],
+  ['Does Ready To Scale support domain, hosting and SEO?', 'Yes. Ready To Scale supports own business domain setup, managed hosting and SEO-ready storefront pages.'],
+];
+
 const whatsappLink = `https://wa.me/919659245977?text=${encodeURIComponent(
   'Hi Ready To Scale team, I want to launch my online store. Please guide me with pricing, demo, and setup details.'
 )}`;
@@ -312,6 +320,25 @@ function VisualShowcase() {
             <RefreshCw className="reel-spinner" size={42} />
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
+
+function FAQSection() {
+  return (
+    <section id="faq" className="faq section-pad">
+      <div className="section-heading" data-reveal>
+        <span className="section-kicker">Questions businesses ask</span>
+        <h2>Ready To Scale, Explained Clearly</h2>
+      </div>
+      <div className="faq-grid" data-stagger>
+        {faqItems.map(([question, answer]) => (
+          <article className="faq-item" key={question}>
+            <h3>{question}</h3>
+            <p>{answer}</p>
+          </article>
+        ))}
       </div>
     </section>
   );
@@ -643,6 +670,8 @@ function App() {
         </div>
       </section>
 
+      <FAQSection />
+
       <section id="contact" className="cta section-pad" data-reveal>
         <div className="cta-inner">
           <div>
@@ -676,6 +705,7 @@ function App() {
           <a href="https://admin.readytoscale.in" target="_blank" rel="noreferrer">Admin Panel Demo</a>
           {/* <AdminLoginInfo compact /> */}
           <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </div>
         <div className="footer-links">
